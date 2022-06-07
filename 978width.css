@@ -4,6 +4,16 @@
   }
   .mainimage {
     margin-left: 100px;
-    width: 100%;
+    width: 33%;
+  }
+  main {
+    grid-template-columns: 1fr;
+    grid-row-gap: 34px;
+  }
+  aside {
+    grid-row-start: 1;
+  }
+  section {
+    padding-top: 70px;
   }
 }
