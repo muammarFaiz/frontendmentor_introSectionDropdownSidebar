@@ -1,0 +1,9 @@
+@media (max-width:978px) {
+  .logo img {
+    bottom: 69px;
+  }
+  .mainimage {
+    margin-left: 100px;
+    width: 100%;
+  }
+}

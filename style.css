@@ -1,0 +1,167 @@
+body {
+  font-family: 'Epilogue', sans-serif;
+  font-size: 18px;
+  padding: 26px 44px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+button,
+.featureBtn,
+.companyBtn {
+  border: none;
+  background: none;
+}
+
+nav button,
+.learnmoreBtn,
+.featureBtn,
+.companyBtn {
+  font-family: 'Epilogue', sans-serif;
+  opacity: 0.6;
+  border-radius: 14px;
+  padding: 16px 24px;
+  font-size: 18px;
+}
+
+nav button:hover,
+.featureBtn:hover,
+.companyBtn:hover {
+  opacity: 1;
+}
+
+.registerBtn,
+.learnmoreBtn {
+  border: 2px solid rgba(0, 0, 0, 0.6);
+}
+
+.registerBtn:hover {
+  border: 2px solid rgba(0, 0, 0, 1);
+}
+
+.navLeft {
+  display: flex;
+}
+
+.logo {
+  position: relative;
+  width: 134px;
+}
+
+.logo img {
+  position: absolute;
+  bottom: 15px;
+}
+
+.featureBtn img,
+.companyBtn img {
+  margin-left: 2px
+}
+
+.myul {
+  position: absolute;
+  margin: 0;
+  padding: 17px 24px;
+  border-radius: 5px;
+  top: 77px;
+}
+
+.feature_ul {
+  left: 150px;
+  box-shadow: 0px 0px 89px -45px black;
+  display: none;
+}
+
+.company_ul {
+  left: 353px;
+  box-shadow: 0px 0px 56px -33px black;
+  display: none;
+}
+
+.myul li {
+  display: block;
+  font-size: 16px;
+  opacity: 0.6;
+  padding: 5px 0px;
+}
+
+.myul li img {
+  margin-right: 10px;
+}
+
+.myul li:hover {
+  opacity: 1;
+}
+
+header {
+  margin-bottom: 54px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.mainimage {
+  width: 71%;
+  margin-left: 83px;
+}
+
+.mytitle {
+  font-size: 73px;
+  margin-top: 0px;
+}
+
+section {
+  padding-left: 124px;
+  padding-right: 60px;
+  padding-top: 108px;
+}
+
+.learnmoreBtn {
+  margin-bottom: 91px;
+  color: white;
+  background-color: black;
+  opacity: 1;
+
+}
+
+.learnmoreBtn:hover {
+  background-color: white;
+  color: black;
+}
+
+.mydescription {
+  margin-bottom: 47px;
+  opacity: 0.6;
+  line-height: 25px;
+}
+
+.featureBtn,
+.companyBtn {
+  display: inline-block;
+}
+
+#featureBtnId:checked~.feature_ul {
+  display: block;
+}
+
+#companyBtnId:checked~.company_ul {
+  display: block;
+}
+
+#companyBtnId:checked~label > img {
+  content: url("./images/icon-arrow-up.svg");
+}
+.burgerBtn {
+  display: none;
+}
+footer {
+  padding-top: 100px;
+}
+/* dropdown using checkbox? */
+/* with :checked */
+/* wrapping the input checkbox with the label tag */

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="978width.css">
+  <link rel="stylesheet" href="mobileStyle.css">
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="navLeft">
+        <div class="logo">
+          <img src="./images/logo.svg" alt="snap logo">
+        </div>
+        <div class="featureWrap">
+          <input type="checkbox" name="faiz" id="featureBtnId" value="a" hidden>
+          <label for="featureBtnId" class="featureBtn">
+            Features
+            <img src="./images/icon-arrow-down.svg" alt="icon arrow down">
+          </label>
+          <ul class="myul feature_ul">
+            <li>
+              <img src="./images/icon-todo.svg" alt="todolist icon">
+              Todo List
+            </li>
+            <li>
+              <img src="./images/icon-calendar.svg" alt="calendar icon">
+              Calendar
+            </li>
+            <li>
+              <img src="./images/icon-reminders.svg" alt="remindere icon">
+              Reminders
+            </li>
+            <li>
+              <img src="./images/icon-planning.svg" alt="planing icon">
+              Planning
+            </li>
+          </ul>
+        </div>
+        <div class="companyWrap">
+          <input type="checkbox" name="faiz" id="companyBtnId" value="a" hidden>
+          <label for="companyBtnId" class="companyBtn">
+            Company
+            <img src="./images/icon-arrow-down.svg" alt="icon arrow down">
+          </label>
+          <ul class="myul company_ul">
+            <li>History</li>
+            <li>Our Team</li>
+            <li>Blog</li>
+          </ul>
+        </div>
+        <div class="careerBtnWrap">
+          <button class="careerBtn">Careers</button>
+        </div>
+        <div class="aboutBtnWrap">
+          <button class="aboutBtn">About</button>
+        </div>
+      </div>
+      <div class="navRight">
+        <button class="loginBtn">Login</button>
+        <button class="registerBtn">Register</button>
+        <div class="burgerBtn">
+          <!-- React root -->
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h1 class="mytitle">Make remote&nbsp;work</h1>
+      <p class="mydescription">
+        Get your team in sync, no matter your location. Streamline processes, 
+        create team rituals, and watch productivity soar.
+      </p>
+      <button class="learnmoreBtn">Learn more</button>
+      <div class="clientLogos">
+        <img src="./images/client-databiz.svg" alt="logo client databiz">
+        <img src="./images/client-audiophile.svg" alt="logo client audiophile">
+        <img src="./images/client-meet.svg" alt="logo client meet">
+        <img src="./images/client-maker.svg" alt="logo client maker">
+      </div>
+    </section>
+    <aside>
+      <picture>
+        <source media="(min-width: 376px)" srcset="./images/image-hero-desktop.png">
+        <img class="mainimage" src="./images/image-hero-mobile.png" alt="main image">
+      </picture>
+    </aside>
+  </main>
+  <footer>
+    
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </footer>
+  <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+  <script src="./withReact/index.js"></script>
+  <!-- <script src="./noFramework/index.js"></script> -->
+</body>
+</html>

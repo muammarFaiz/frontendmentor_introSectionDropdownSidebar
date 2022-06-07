@@ -1,0 +1,156 @@
+@media (max-width:375px) {
+  body {
+    padding: 14px 0px;
+    margin: auto;
+  }
+  .navLeft> :nth-child(n+2) {
+    display: none;
+  }
+  .navRight > :nth-child(-n+2) {
+    display: none;
+  }
+  .burgerBtn {
+    display: block;
+    width: 50px;
+    padding: 0px;
+    opacity: 1;
+  }
+  .burgerBtn > div > div > hr {
+    border: none;
+    border-top: 2px solid black;
+    width: 36px;
+    border-top-width: 2px;
+    margin: 6px 0px 6px auto;
+  }
+  .logo img {
+    bottom: 0px;
+  }
+  main {
+    grid-template-columns: 1fr;
+    grid-row-gap: 34px;
+  }
+  aside {
+    grid-row-start: 1;
+  }
+  .mainimage {
+    width: 100%;
+    margin-left: 0px;
+  }
+  header {
+    padding: 9px 20px 0px;
+    margin-bottom: 25px;
+  }
+  section {
+    padding: 0px;
+    text-align: center;
+  }
+  .mytitle {
+    font-size: 36px;
+    margin-bottom: 15px;
+  }
+  .mydescription {
+    font-size: 17px;
+    margin-bottom: 24px;
+    margin-top: 0px;
+  }
+  .learnmoreBtn {
+    padding: 12px 20px;
+    margin-bottom: 48px;
+  }
+  .clientLogos > * {
+    width: 20%;
+    margin: 0px 9px;
+  }
+  .clientLogos > :nth-child(2) {
+    width: 15%;
+  }
+  .sidebarBody {
+    display: grid;
+    grid-template-columns: 134px 1fr;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+  }
+  nav {
+    height: 26px;
+  }
+  .sidebarGround {
+    background-color: white;
+  }
+  .sidebarEmpty {
+    background-color: black;
+    opacity: 0.7;
+  }
+  .sidebarExitDiv {
+    text-align: right;
+  }
+  .sidebarExitDiv > img {
+    margin-top: 17px;
+    margin-right: 16px;
+  }
+  .sidebarContent {
+    text-align: left;
+  }
+  .sidebarFeaturesUl>li,
+  .sidebarCompanyUl>li {
+    display: block;
+    margin-bottom: 20px;
+    opacity: 0.6;
+  }
+
+  .sidebarFeaturesUl,
+  .sidebarCompanyUl {
+    display: none;
+    padding-left: 30px;
+    margin-top: 27px;
+    margin-bottom: 28px;
+  }
+
+  #sidebarFeaturesCheckbox:checked~.sidebarFeaturesUl,
+  #sidebarCompanyCheckbox:checked~.sidebarCompanyUl {
+    display: block;
+  }
+  .sidebarLogin,
+  .sidebarRegister {
+    text-align: center;
+  }
+
+  .sidebarRegisterButton,
+  .sidebarLoginButton {
+    font-size: 15px;
+  }
+
+  .sidebarRegisterButton {
+    border: 2px solid black;
+    padding: 12px 60px;
+  }
+  .sidebarCareersButton,
+  .sidebarAboutButton {
+    padding-top: 10px
+  }
+  .sidebarCareers, .sidebarAbout {
+    padding-left: 7px;
+  }
+
+  .sidebarFeatures,
+  .sidebarCompany {
+    margin-left: 30px;
+    margin-bottom: 20px;
+  }
+  #sidebarFeaturesCheckbox+label,
+  #sidebarCompanyCheckbox+label {
+    margin-right: 15px;
+    opacity: 0.6;
+  }
+
+  .sidebarFeaturesUl>li>img {
+    margin-right: 15px;
+  }
+  .sidebarFeaturesUl>li:hover, .sidebarCompanyUl>li:hover,
+  #sidebarFeaturesCheckbox+label:hover, #sidebarCompanyCheckbox+label:hover {
+    opacity: 1;
+  }
+}
